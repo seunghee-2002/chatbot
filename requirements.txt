@@ -4,13 +4,16 @@ transformers>=4.44.0
 datasets
 accelerate>=0.26.0
 
-# 파인튜닝 및 양자화 (경량 학습 필수)
+# 파인튜닝 및 양자화
 peft
 trl
-bitsandbytes
+
+# Windows 사용자: bitsandbytes는 Linux 전용입니다
+# VRAM 16GB 미만이면 Google Colab 사용 권장
+# bitsandbytes  # Linux에서만 주석 해제
 
 # 전처리 및 시각화
 tqdm
-wandb
+# wandb  # 필요시 주석 해제
 matplotlib
 scipy

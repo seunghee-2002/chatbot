@@ -1,0 +1,959 @@
+[
+  {
+    "personality": "존칭형",
+    "adventurerType": "전사",
+    "affectionLevel": 2,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "안녕하십시오. 저번 검은 좀 아쉬웠습니다. 이번엔 더 나은 검을 대여할 수 있을까요?"
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "마법사",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕! 저번 지팡이가 완전 대박이었어. 오늘도 그런 거 찾고 있어!"
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "도적",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "어, 단검 있어? 하나 빌려줘."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "궁수",
+    "affectionLevel": 1,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 1
+    },
+    "greeting": "왔어. 활 줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "전사",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "와! 저번 검 정말 멋졌어. 오늘도 그런 느낌의 무기 있을까?"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "전사",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "크흠. 저번 검은 별로였다. 이번엔 좀 나은 걸로."
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "마법사",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "안녕하십니까. 마법 지팡이 대여 문의드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "도적",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "야! 또 왔어. 저번 단검 진짜 좋았는데, 오늘도 추천해 줘."
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "궁수",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "야! 나왔어? 오늘 활은 뭐 좋은 거 있어?"
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "전사",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "검. 빌려줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "마법사",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 1
+    },
+    "greeting": "저번 지팡이는 좀 아쉬웠네... 이번엔 더 강력한 거 있을까?"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "도적",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "오! 좋은 냄새다. 단검 하나 부탁한다!"
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "궁수",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕하세요! 저번 활 덕분에 잘 했습니다. 오늘도 좋은 활 부탁드려요."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "전사",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "안녕. 검 좀 빌릴 수 있을까?"
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "마법사",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 1
+    },
+    "greeting": "어, 지팡이 있어? 저번 거랑 비슷한 걸로."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "도적",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "왔다. 단검 줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "궁수",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "저번 활은 정말 별로였어... 이번엔 좀 나은 걸로 부탁할게."
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "전사",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "크흠. 검 대여하러 왔다."
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "도적",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕하세요. 저번 단검 덕분에 성공했습니다. 이번에도 좋은 걸로 부탁드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "마법사",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕! 오늘도 대성공 기대하고 있어. 지팡이 추천해 줘!"
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "궁수",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 1
+    },
+    "greeting": "야! 활 가져와. 저번 거랑 비슷하게."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "전사",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "왔어. 검 바꿔 줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "도적",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 1
+    },
+    "greeting": "저번 단검은 좀 아쉽더라. 이번엔 더 날카로운 거 있을까?"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "마법사",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "오! 강한 마력이 느껴지는군. 지팡이 하나 주시오!"
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "전사",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "안녕하십니까. 검 대여가 가능한지 문의드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "궁수",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕! 저번 활 정말 좋았어. 오늘도 그런 느낌으로 부탁해."
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "도적",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "어, 단검 있어? 빌려줘."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "마법사",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 1
+    },
+    "greeting": "왔다. 지팡이 줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "전사",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "와아! 저번 검은 진짜 전설이었어. 오늘도 그런 무기 기대할게!"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "궁수",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "크흠. 저번 활은 실패였다. 새 걸로."
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "도적",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕하세요. 저번 단검 덕분에 무사히 돌아왔습니다. 이번에도 부탁드려요."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "마법사",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "여기가 그 유명한 무기점이구나. 지팡이 좀 볼 수 있어?"
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "전사",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 1
+    },
+    "greeting": "어, 검 있어? 저번 건 좀 아쉽더라."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "궁수",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "왔어. 활 줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "도적",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "여기가 소문난 그 가게구나! 단검 좀 빌려줄 수 있어?"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "마법사",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "오! 마력이 넘치는구나. 지팡이 부탁한다."
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "전사",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "안녕하십시오. 저번 검은 실패였습니다. 이번엔 더 나은 걸로 부탁드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "궁수",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 1
+    },
+    "greeting": "안녕! 저번 활 괜찮았어. 오늘도 비슷한 거 있어?"
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "도적",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "어, 단검 빌려줘. 급하다."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "마법사",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "왔다. 지팡이 줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "전사",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 1
+    },
+    "greeting": "저번 검은 좀 아쉬웠는데... 이번엔 더 강력한 걸로 부탁할게!"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "궁수",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "오! 정기가 느껴지는군. 활 하나 주시오!"
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "도적",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕하세요. 저번 단검 덕분에 성공했습니다. 이번에도 잘 부탁드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "마법사",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "안녕. 지팡이 좀 빌릴 수 있을까?"
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "전사",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "야! 검 가져와. 저번 거랑 같은 걸로."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "궁수",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "활. 빌려줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "도적",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "와! 저번 단검은 진짜 대박이었어! 오늘도 그런 거 있을까?"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "마법사",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "크흠. 저번 지팡이는 실패였다. 새 걸로."
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "전사",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕하세요! 저번 검 덕분에 대성공했습니다. 항상 감사드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "궁수",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 1
+    },
+    "greeting": "안녕! 저번 활 괜찮았어. 오늘도 부탁해."
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "도적",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "야! 단검 가져와. 저번 거 좋더라."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "마법사",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "지팡이. 빌려줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "전사",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "저번 검은 좀 실망이었어... 이번엔 더 잘 고르고 싶은데."
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "궁수",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "오! 활이 반짝이는군. 하나 주시오!"
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "도적",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 1
+    },
+    "greeting": "안녕하십시오. 저번 단검은 보통이었습니다. 이번엔 더 나은 걸로 부탁드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "마법사",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕! 오늘도 대성공 기대해. 지팡이 추천해 줘!"
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "전사",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "어, 검 있어? 빌려줘."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "궁수",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "왔어. 활 줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "도적",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 1
+    },
+    "greeting": "저번 단검은 괜찮았어! 오늘도 비슷한 거 있을까?"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "마법사",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "크흠. 지팡이 대여하러 왔다."
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "전사",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕하세요! 저번 검 정말 훌륭했습니다. 오늘도 기대됩니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "궁수",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "안녕. 저번 활은 별로였어. 이번엔 더 나은 걸로."
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "도적",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "야! 단검 가져와! 저번 거 완전 대박이었어."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "마법사",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 1
+    },
+    "greeting": "왔다. 지팡이 줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "전사",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "와아! 저번 검은 전설이었어! 오늘도 그런 무기 기대해도 되지?"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "궁수",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "크흠. 활 대여하러 왔다."
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "도적",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕하십시오. 저번 단검 덕분에 성공했습니다. 이번에도 잘 부탁드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "마법사",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 1
+    },
+    "greeting": "안녕! 저번 지팡이 괜찮았어. 오늘도 비슷한 거 있어?"
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "전사",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "어, 검 빌려줘."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "궁수",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "왔어. 활 줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "도적",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "여기가 그 유명한 가게구나! 단검 좀 빌려줄 수 있어?"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "마법사",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "오! 강력한 마력이 느껴지는구나. 지팡이 하나 주시오!"
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "전사",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "안녕하십니까. 저번 검은 실패였습니다. 이번엔 더 나은 걸로 부탁드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "궁수",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 1
+    },
+    "greeting": "안녕! 저번 활 괜찮았어. 오늘도 비슷한 걸로."
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "도적",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "야! 단검 가져와. 저번 거 좋더라."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "마법사",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "지팡이. 빌려줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "전사",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "와! 저번 검은 정말 전설이었어! 오늘도 그런 무기 있을까?"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "궁수",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "크흠. 저번 활은 실패였다. 새 걸로."
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "도적",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕하십시오. 저번 단검 덕분에 성공했습니다. 이번에도 잘 부탁드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "마법사",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "안녕! 오늘도 대성공 기대해. 지팡이 추천해 줘!"
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "전사",
+    "affectionLevel": 0,
+    "visitCount": 0,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "어, 검 있어? 빌려줘."
+  },
+  {
+    "personality": "단답형",
+    "adventurerType": "궁수",
+    "affectionLevel": 4,
+    "visitCount": 4,
+    "context": {
+      "lastResult": 3,
+      "lastTypeMatch": 2
+    },
+    "greeting": "왔어. 활 줘."
+  },
+  {
+    "personality": "너스레형",
+    "adventurerType": "도적",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 0,
+      "lastTypeMatch": 0
+    },
+    "greeting": "여기가 그 소문난 가게구나! 단검 좀 빌려줄 수 있어?"
+  },
+  {
+    "personality": "야성형",
+    "adventurerType": "마법사",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "오! 마력이 넘치는구나. 지팡이 부탁한다."
+  },
+  {
+    "personality": "존칭형",
+    "adventurerType": "전사",
+    "affectionLevel": 1,
+    "visitCount": 1,
+    "context": {
+      "lastResult": 1,
+      "lastTypeMatch": 0
+    },
+    "greeting": "안녕하십시오. 저번 검은 실패였습니다. 이번엔 더 나은 걸로 부탁드립니다."
+  },
+  {
+    "personality": "평범형",
+    "adventurerType": "궁수",
+    "affectionLevel": 2,
+    "visitCount": 2,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 1
+    },
+    "greeting": "안녕! 저번 활 괜찮았어. 오늘도 비슷한 걸로."
+  },
+  {
+    "personality": "하대형",
+    "adventurerType": "도적",
+    "affectionLevel": 3,
+    "visitCount": 3,
+    "context": {
+      "lastResult": 2,
+      "lastTypeMatch": 2
+    },
+    "greeting": "야! 단검 가져와. 저번 거 좋더라."
+  }
+]
