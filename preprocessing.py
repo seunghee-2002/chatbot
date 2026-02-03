@@ -36,7 +36,7 @@ def convert_to_instruction(example):
     
     return {"instruction": instruction, "output": example.get('greeting', "")}
 
-def preprocess_all_data(dataset_dir="./Dataset", output_file="train_dataset.jsonl"):
+def preprocess_all_data(dataset_dir="./dataset", output_file="train_dataset.jsonl"):
     """폴더 내 모든 JSON을 읽어 하나의 JSONL로 합치고 현황 출력"""
     combined_data = []
     
