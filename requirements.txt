@@ -1,0 +1,16 @@
+# 핵심 딥러닝 및 모델 라이브러리
+torch>=2.0.0
+transformers>=4.44.0
+datasets
+accelerate>=0.26.0
+
+# 파인튜닝 및 양자화 (경량 학습 필수)
+peft
+trl
+bitsandbytes
+
+# 전처리 및 시각화
+tqdm
+wandb
+matplotlib
+scipy

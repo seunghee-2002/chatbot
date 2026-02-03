@@ -30,8 +30,10 @@ training_args = TrainingArguments(
     learning_rate=2e-4,
     num_train_epochs=5,
     fp16=True, # NVIDIA GPU 가속
-    logging_steps=10,
-    save_strategy="epoch"
+    logging_steps=1,
+    save_strategy="epoch",
+    report_to="wandb",
+    run_name="exaone-greeting-v1"
 )
 
 trainer = SFTTrainer(
