@@ -1,5 +1,0 @@
-# 1. 라이브러리 일괄 설치
-pip install -r requirements.txt
-
-# 2. (NVIDIA 사용 시) CUDA 인식 확인
-python -c "import torch; print('GPU 활성화 상태:', torch.cuda.is_available())"
