@@ -47,8 +47,12 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map="auto",
     trust_remote_code=True  # EXAONE 커스텀 코드 허용
 )
+model.enable_input_require_grads() # 학습을 위해 입력 임베딩 고정
 model = get_peft_model(model, peft_config)
-model.print_trainable_parameters()  # 학습 파라미터 수 확인
+
+for name, param in model.named_parameters():
+    if "lora_" in name:
+        param.requires_grad = True
 
 # 학습 설정
 training_args = TrainingArguments(
