@@ -73,7 +73,7 @@ def generate_greeting(model, tokenizer,
 if __name__ == "__main__":
     # 모델 로드
     base_model_id = "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
-    lora_adapter_path = "./exaone-greeting-lora/checkpoint-510"  # 실제 체크포인트 경로로 수정
+    lora_adapter_path = "./exaone-greeting-lora/4"  # 실제 체크포인트 경로로 수정
     
     model, tokenizer = load_model(base_model_id, lora_adapter_path)
     
