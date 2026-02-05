@@ -14,8 +14,14 @@ if tokenizer.pad_token is None:
 
 # 데이터셋 로드
 print("데이터셋을 로드합니다...")
-dataset = load_dataset('json', data_files='train_dataset.jsonl', split='train')
-print(f"총 {len(dataset)}개의 학습 데이터가 로드되었습니다.")
+raw_dataset = load_dataset('json', data_files='train_dataset.jsonl', split='train')
+
+# 90% 학습, 10% 검증으로 분할
+dataset_split = raw_dataset.train_test_split(test_size=0.1, seed=42)
+train_dataset = dataset_split['train']
+eval_dataset = dataset_split['test']
+
+print(f"학습 데이터: {len(train_dataset)}개 / 검증 데이터: {len(eval_dataset)}개")
 
 # EXAONE 공식 chat template 적용 함수
 def formatting_prompts_func(example):
@@ -50,7 +56,7 @@ peft_config = LoraConfig(
 )
 
 # 모델 로드 (FP16으로 메모리 절약)
-print("모델을 로드합니다... (VRAM 사용량: 약 8-10GB)")
+print("모델을 로드합니다...")
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
     torch_dtype=torch.float16,
@@ -78,10 +84,13 @@ training_args = TrainingArguments(
     per_device_train_batch_size=1,
     gradient_accumulation_steps=8,
     learning_rate=2e-4,
-    num_train_epochs=10,
+    num_train_epochs=4,
     fp16=True,
     logging_steps=10,
     save_strategy="epoch",
+    eval_strategy="epoch", # 'steps' 혹은 'epoch' 중 선택
+    eval_steps=10,
+    per_device_eval_batch_size=1,
     save_total_limit=2,
     report_to="none",
     gradient_checkpointing=True,
@@ -91,7 +100,8 @@ training_args = TrainingArguments(
 # Trainer 설정
 trainer = SFTTrainer(
     model=model,
-    train_dataset=dataset,
+    train_dataset=train_dataset,
+    eval_dataset=eval_dataset,
     peft_config=peft_config,
     formatting_func=formatting_prompts_func,
     max_seq_length=512,
@@ -102,11 +112,10 @@ trainer = SFTTrainer(
 
 print("\n" + "="*50)
 print("학습을 시작합니다...")
-print(f"총 데이터: {len(dataset)}개")
+print(f"총 데이터: {len(raw_dataset)}개")
 print(f"에포크: {training_args.num_train_epochs}")
 print(f"배치 크기: {training_args.per_device_train_batch_size}")
 print(f"그래디언트 누적: {training_args.gradient_accumulation_steps}")
-print(f"예상 학습 시간: RTX 3060 기준 약 40-60분")
 print("="*50 + "\n")
 
 trainer.train()
