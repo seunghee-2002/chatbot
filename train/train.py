@@ -4,17 +4,17 @@ from trl import SFTTrainer
 from datasets import load_dataset
 import torch
 
-model_id = "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
+model_id = "Qwen/Qwen2.5-1.5B-Instruct"
 
 # 토크나이저 로드 및 설정
 print("토크나이저를 로드합니다...")
-tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained(model_id)
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
 
 # 데이터셋 로드
 print("데이터셋을 로드합니다...")
-raw_dataset = load_dataset('json', data_files='train_dataset.jsonl', split='train')
+raw_dataset = load_dataset('json', data_files='./train/train_dataset.jsonl', split='train')
 
 # 90% 학습, 10% 검증으로 분할
 dataset_split = raw_dataset.train_test_split(test_size=0.1, seed=42)
@@ -23,9 +23,8 @@ eval_dataset = dataset_split['test']
 
 print(f"학습 데이터: {len(train_dataset)}개 / 검증 데이터: {len(eval_dataset)}개")
 
-# EXAONE 공식 chat template 적용 함수
+# Qwen 공식 chat template 적용 함수
 def formatting_prompts_func(example):
-    """EXAONE 공식 apply_chat_template 방식 사용"""
     output_texts = []
     for i in range(len(example['instruction'])):
         messages = [
@@ -33,10 +32,9 @@ def formatting_prompts_func(example):
             {"role": "user", "content": example['instruction'][i]},
             {"role": "assistant", "content": example['output'][i]}
         ]
-        # apply_chat_template 사용
         text = tokenizer.apply_chat_template(
-            messages, 
-            tokenize=False, 
+            messages,
+            tokenize=False,
             add_generation_prompt=False
         )
         output_texts.append(text)
@@ -47,28 +45,26 @@ peft_config = LoraConfig(
     r=32,
     lora_alpha=64,
     target_modules=[
-        "q_proj", "k_proj", "v_proj", "o_proj", # 어텐션 계층 (말투/톤 학습)
-        "gate_proj", "up_proj", "down_proj"      # MLP 계층 (지식/논리 연결 학습)
+        "q_proj", "k_proj", "v_proj", "o_proj",
+        "gate_proj", "up_proj", "down_proj"
     ],
     lora_dropout=0.05,
     bias="none",
     task_type="CAUSAL_LM"
 )
 
-# 모델 로드 (FP16으로 메모리 절약)
+# 모델 로드
 print("모델을 로드합니다...")
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
-    torch_dtype=torch.float16,
-    device_map="auto",
-    trust_remote_code=True
+    dtype=torch.float16,
+    device_map="auto"
 )
 
 # LoRA 적용
 model.enable_input_require_grads()
 model = get_peft_model(model, peft_config)
 
-# LoRA 파라미터만 학습 가능하도록 설정
 for name, param in model.named_parameters():
     if "lora_" in name:
         param.requires_grad = True
@@ -80,7 +76,7 @@ print(f"  학습 가능: {trainable_params:,} / 전체: {all_params:,} ({100 * t
 
 # 학습 설정
 training_args = TrainingArguments(
-    output_dir="./exaone-greeting-lora",
+    output_dir="./qwen-greeting-lora",
     per_device_train_batch_size=1,
     gradient_accumulation_steps=8,
     learning_rate=2e-4,
@@ -88,8 +84,7 @@ training_args = TrainingArguments(
     fp16=True,
     logging_steps=10,
     save_strategy="epoch",
-    eval_strategy="epoch", # 'steps' 혹은 'epoch' 중 선택
-    eval_steps=10,
+    eval_strategy="epoch",
     per_device_eval_batch_size=1,
     save_total_limit=2,
     report_to="none",

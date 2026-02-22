@@ -3,18 +3,18 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
 # 1. 경로 설정
-base_model_id = "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
-lora_model_path = "./exaone-greeting-lora"  # train.py에서 설정한 output_dir
-output_dir = "./exaone-greeting-final"
+base_model_id = "Qwen/Qwen2.5-1.5B-Instruct"
+lora_model_path = "./qwen-greeting-lora/checkpoint-248" 
+output_dir = "./qwen-greeting-final"
 
-print("모델 병합을 시작합니다...")
+print("GPU를 사용하여 모델 병합을 시작합니다...")
 
-# 2. 모델 및 토크나이저 로드
+# 2. 모델 및 토크나이저 로드 (GPU 사용 설정)
 base_model = AutoModelForCausalLM.from_pretrained(
     base_model_id,
     torch_dtype=torch.float16,
-    device_map="cpu",  # 병합은 메모리 확보를 위해 CPU에서 진행 권장
-    trust_remote_code=True  # EXAONE 커스텀 코드 허용
+    device_map="auto",  # GPU가 있으면 자동으로 할당
+    trust_remote_code=True
 )
 tokenizer = AutoTokenizer.from_pretrained(base_model_id, trust_remote_code=True)
 
