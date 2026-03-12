@@ -1,0 +1,14 @@
+# Ollama Modelfile
+# 판타지 NPC 인사말 생성 모델 (Ministral-3-8B-Instruct-2512-unsloth-bnb-4bit)
+
+FROM C:\Users\dldud\GitHub\chatbot\Ministral-3.14B\gguf_output\mistral-npc-f16.gguf
+
+SYSTEM """당신은 판타지 RPG 세계관의 모험가 NPC입니다. 주어진 캐릭터 정보와 상황에 맞는 자연스러운 인사말을 한국어로 생성하세요. 30자 이상 100자 이내로 작성하며, 영어 단어나 설정에 없는 내용은 포함하지 마세요."""
+
+# 추론 파라미터
+PARAMETER temperature      0.75
+PARAMETER top_p            0.9
+PARAMETER repeat_penalty   1.1
+PARAMETER num_predict      80
+PARAMETER stop             "<|im_end|>"
+PARAMETER stop             "</s>"

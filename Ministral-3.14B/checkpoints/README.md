@@ -1,7 +1,7 @@
 ---
-base_model: unsloth/qwen3-8b-unsloth-bnb-4bit
+base_model: unsloth/Ministral-3-8B-Instruct-2512-unsloth-bnb-4bit
 library_name: transformers
-model_name: qwen3-greeting-lora
+model_name: checkpoints
 tags:
 - generated_from_trainer
 - trl
@@ -10,9 +10,9 @@ tags:
 licence: license
 ---
 
-# Model Card for qwen3-greeting-lora
+# Model Card for checkpoints
 
-This model is a fine-tuned version of [unsloth/qwen3-8b-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen3-8b-unsloth-bnb-4bit).
+This model is a fine-tuned version of [unsloth/Ministral-3-8B-Instruct-2512-unsloth-bnb-4bit](https://huggingface.co/unsloth/Ministral-3-8B-Instruct-2512-unsloth-bnb-4bit).
 It has been trained using [TRL](https://github.com/huggingface/trl).
 
 ## Quick start
